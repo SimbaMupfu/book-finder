@@ -1,3 +1,11 @@
 spring:
   application:
     name: Book Finder
+
+logging:
+  level:
+    org.springframework: INFO
+    inc.hustles.sims: DEBUG
+
+  pattern:
+    console: %d{yyyy-MM-dd HH:mm:ss} - %msg%n
