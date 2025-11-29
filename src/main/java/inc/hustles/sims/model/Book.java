@@ -1,12 +1,29 @@
 package inc.hustles.sims.model;
 
 public class Book {
+    private Long id;
     private String title;
     private String author;
+    private int publicationYear;
+    private String genre;
+    private int availableCopies;
 
-    public Book(String title, String author) {
+    public Book(){}
+
+    public Book(String title, String author, int publicationYear, String genre, int availableCopies) {
         this.title = title;
         this.author = author;
+        this.publicationYear = publicationYear;
+        this.genre = genre;
+        this.availableCopies = availableCopies;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -23,5 +40,41 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public int getPublicationYear() {
+        return publicationYear;
+    }
+
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public int getAvailableCopies() {
+        return availableCopies;
+    }
+
+    public void setAvailableCopies(int availableCopies) {
+        this.availableCopies = availableCopies;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publicationYear=" + publicationYear +
+                ", genre='" + genre + '\'' +
+                ", availableCopies=" + availableCopies +
+                '}';
     }
 }
