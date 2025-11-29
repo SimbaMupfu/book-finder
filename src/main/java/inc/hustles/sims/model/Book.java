@@ -1,8 +1,5 @@
 package inc.hustles.sims.model;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Book {
     private String title;
     private String author;
